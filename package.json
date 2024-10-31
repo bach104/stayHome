@@ -1,0 +1,32 @@
+{
+  "name": "test_log",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": " nodemon --inspect index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bach104/stayHome.git"
+  },
+  "keywords": [
+    "f8",
+    "js",
+    "nodejs"
+  ],
+  "author": "bach104",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bach104/stayHome/issues"
+  },
+  "homepage": "https://github.com/bach104/stayHome#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "safe-buffer": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
