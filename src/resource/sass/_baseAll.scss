@@ -1,21 +1,21 @@
-.btn{
+.btn {
     border: 1px solid #fff;
 }
-.btn:hover{
+.btn:hover {
     border: 1px solid $btn-hv-White;
 }
 .dropdown-item-a {
     color: $color-White;
     display: block;
     width: 100%;
-    padding:10px;
+    padding: 10px;
     font-weight: 400;
     text-decoration: none;
     white-space: nowrap;
     transition: all 0.24s ease;
 }
-.dropdown-item-a:hover{
+.dropdown-item-a:hover {
     color: $color-Black;
     background-color: $btn-hv-White;
-    font-weight:600;
+    font-weight: 600;
 }

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "push-code": "git add . && git commit -m 'fix' && git push",
+    "beautiful": "lint-staged",
     "watch": "node-sass --watch src/resource/sass --output src/public/css",
     "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +24,11 @@
     "url": "https://github.com/bach104/stayHome/issues"
   },
   "homepage": "https://github.com/bach104/stayHome#readme",
+
+  "lint-staged": {
+    "src/**/*.{js,json,scss,html}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -29,9 +36,12 @@
     "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
     "safe-buffer": "^5.2.1"
   }
 }
